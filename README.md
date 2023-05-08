@@ -116,7 +116,37 @@ public class Main {
     }
 }
 
+import java.util.Scanner;
 
+public class Arithmetic {
+
+    public static void main(String[] args) {
+     
+        Scanner input = new Scanner(System.in);
+
+       
+        System.out.print("Input first number: ");
+        int num1 = input.nextInt();
+        System.out.print("Input second number: ");
+        int num2 = input.nextInt();
+
+       
+        int sum = num1 + num2;
+        int diff = num1 - num2;
+        int prod = num1 * num2;
+        int quot = num1 / num2;
+        int rem = num1 % num2;
+
+        System.out.println(num1 + " + " + num2 + " = " + sum);
+        System.out.println(num1 + " - " + num2 + " = " + diff);
+        System.out.println(num1 + " x " + num2 + " = " + prod);
+        System.out.println(num1 + " / " + num2 + " = " + quot);
+        System.out.println(num1 + " mod " + num2 + " = " + rem);
+
+     
+        input.close();
+    }
+}
 //برنامج Java لقبول رقم وتحقق من أن الرقم زوجي أم لا. يطبع 1 إذا كان الرقم زوجيا أو 0 إذا كان الرقم فرديا. (استخدم بيان if)
 
 
