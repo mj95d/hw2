@@ -1,22 +1,23 @@
 # hw2
 
 //abdulmajeed
-// برنامج Java لحساب مجموع عددين صحيحين وإرجاع true إذا كان المجموع يساوي عددا صحيحا ثالثا
+// 
 
 import java.util.Scanner;
+
+
 public class Main {
     public static void main(String[] args) {
 
-        Scanner input= new Scanner(System.in);
-        int number1=5;
-        int number2=10;
-        int number3=15;
-        System.out.println("please inter 2 integers:");
-        number1=input.nextInt();
-        number2=input.nextInt();
-        number3=input.nextInt();
-        int sum = number1+number2+number3;
-        System.out.printf("%d + %d = %d", number1,number2,number3);
+          int firstNumber = 125;
+        int secondNumber = 24;
+       int sum = firstNumber + secondNumber;
+        int min = firstNumber - secondNumber;
+        int mul = firstNumber * secondNumber;
+        int div = firstNumber / secondNumber;
+      int mod = firstNumber % secondNumber;
+      System.out.println("sum is = " + sum + "\n" + "minus is = " + min + "\n"
+               + "multiplication is = " + mul + "\n" + "division is = " + div + "\n" + "mod is = " + mod);
 
 
 
@@ -47,57 +48,6 @@ public class Main {
             }
         }
 
-//الجمع
-
-public class Main {
-    public static void main(String[] args) {
-        int x = 125;
-        int y = 24;
-        System.out.println(x + y);
-
-    }
-}
-//الطرح
-
-public class Main {
-    public static void main(String[] args) {
-        int x = 125;
-        int y = 24;
-        System.out.println(x - y);
-
-    }
-}
-
-
-
-
-
-
-
-
-//الضرب
-
-public class Main {
-    public static void main(String[] args) {
-        int x = 125;
-        int y = 4;
-        System.out.println(x * y);
-    }
-}
-
-
-
-
-
-//القسمة
-
-public class Main {
-    public static void main(String[] args) {
-        int x = 125;
-        int y = 4;
-        System.out.println(x / y);
-    }
-}
 
 
 // السلسلة
@@ -147,27 +97,71 @@ public class Arithmetic {
         input.close();
     }
 }
-//برنامج Java لقبول رقم وتحقق من أن الرقم زوجي أم لا. يطبع 1 إذا كان الرقم زوجيا أو 0 إذا كان الرقم فرديا. (استخدم بيان if)
+//برنامج Java 
 
 
-import java.util.Scanner;
 
-public class EvenOdd
-{
-    public static void main(String[] args)
-    {
-        int a;
-        System.out.println("Please enter a number to check even or odd:");
-        Scanner sc = new Scanner(System.in);
-        a = sc.nextInt();
-
-        if(a % 2 == 0)
-        {
-            System.out.println("Entered number is an even number");
+       System.out.println("Pls enter your role");
+        String role = s.nextLine();
+        if(role.equals("admin") || role.equals("superuser")){
+            System.out.println("welcome " + role);
+        }else{
+            System.out.println("welcome " + role);
         }
-        else
-        {
-            System.out.println("Entered number is an odd number");
+
+      
+        int firstNum = 10;
+        int secondNum = 5;
+        int thirdNum = 15;
+        if(firstNum + secondNum == thirdNum){
+            System.out.println("The result is:" + true);
+        }else{
+            System.out.println("The result is:" + false);
+        }
+
+  
+        Scanner s = new Scanner(System.in);
+        System.out.println("Pls enter firstNum");
+        int firstNum = s.nextInt();
+        System.out.println("Pls enter secondNum");
+        int secondNum = s.nextInt();
+        System.out.println("Pls enter thirdNum");
+        int thirdNum = s.nextInt();
+
+        if(firstNum > secondNum && firstNum > thirdNum) {
+            System.out.println("The greatest:" + firstNum);
+        }else if(secondNum > thirdNum) {
+            System.out.println("The greatest:" + secondNum);
+        }else{
+            System.out.println("The greatest:" + thirdNum);
+      }
+
+
+        Scanner s = new Scanner(System.in);
+        System.out.println("Input number");
+        int num = s.nextInt();
+        switch (num){
+            case 1 :
+                System.out.println("Monday");
+                break;
+            case 2 :
+                System.out.println("Tuesday");
+                break;
+            case 3 :
+                System.out.println("Wednesday");
+                break;
+            case 4 :
+                System.out.println("Thursday");
+                break;
+            case 5 :
+                System.out.println("Friday");
+                break;
+            case 6 :
+                System.out.println("Saturday");
+                break;
+            case 7 :
+                System.out.println("Sunday");
+                break;
         }
     }
 }
